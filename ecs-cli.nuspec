@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ecs-cli</id>
+    <version>1.21.0</version>
+    <packageSourceUrl>https://github.com/robmoss2k/ecs-cli</packageSourceUrl>
+    <owners>chocolatey-community,robmoss2k</owners>
+    <title>Amazon ECS CLI</title>
+    <authors>AWS</authors>
+    <projectUrl>https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI.html</projectUrl>
+    <copyright>2021 Amazon Web Services, Inc.</copyright>
+    <licenseUrl>https://github.com/aws/amazon-ecs-cli/blob/mainline/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/aws/amazon-ecs-cli</projectSourceUrl>
+    <docsUrl>https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_reference.html</docsUrl>
+    <bugTrackerUrl>https://github.com/aws/amazon-ecs-cli/issues</bugTrackerUrl>
+    <tags>ecs-cli aws</tags>
+    <summary>The Amazon ECS Command Line Interface (CLI) is a command line tool for Amazon Elastic Container Service (Amazon ECS) that provides high-level commands to simplify creating, updating, and monitoring clusters and tasks from a local development environment.</summary>
+    <description># Amazon ECS CLI
+
+The Amazon ECS Command Line Interface (CLI) is a command line tool for Amazon Elastic Container
+Service (Amazon ECS) that provides high-level commands to simplify creating, updating, and
+monitoring clusters and tasks from a local development environment. The Amazon ECS CLI supports
+[Docker Compose](https://docs.docker.com/compose/), a popular open-source tool for defining and
+running multi-container applications. Use the CLI as part of your everyday development and testing
+cycle as an alternative to the AWS Management Console or the AWS CLI.
+
+For more information about Amazon ECS, see the [Amazon ECS Developer
+Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html).
+
+The AWS Command Line Interface (AWS CLI) is a unified client for AWS services that provides commands
+for all public API operations. These commands are lower level than those provided by the Amazon ECS
+CLI. For more information about supported services and to download the AWS CLI, see the [AWS Command
+Line Interface](http://aws.amazon.com/cli/) product detail page.
+
+- [Installing](#installing)
+  - [Latest version](#latest-version)
+  - [Download Links for within China](#download-links-for-within-china)
+  - [Download specific version](#download-specific-version)
+  - [Verifying Signatures](#verifying-signatures)
+- [Configuring the CLI](#configuring-the-cli)
+  - [ECS Profiles](#ecs-profiles)
+  - [Cluster Configurations](#cluster-configurations)
+  - [Configuring Defaults](#configuring-defaults)
+- [Using the CLI](#using-the-cli)
+  - [Creating an ECS Cluster](#creating-an-ecs-cluster)
+    - [Creating a Fargate cluster](#creating-a-fargate-cluster)
+  - [Starting/Running Tasks](#startingrunning-tasks)
+  - [Creating a Service](#creating-a-service)
+  - [Using ECS parameters](#using-ecs-parameters)
+    - [Launching an AWS Fargate task](#launching-an-aws-fargate-task)
+    - [Using Route53 Service Discovery](#using-route53-service-discovery)
+  - [Viewing Running Tasks](#viewing-running-tasks)
+  - [Viewing Container Logs](#viewing-container-logs)
+  - [Using FIPS Endpoints](#using-fips-endpoints)
+  - [Using Private Registry Authentication](#using-private-registry-authentication)
+  - [Checking for Missing Attributes and Debugging Reason Attribute Errors](#checking-for-missing-attributes-and-debugging-reason-attribute-errors)
+  - [Tagging Resources](#tagging-resources)
+    - [ARN Formats](#arn-formats)
+  - [Running Tasks Locally](#running-tasks-locally)
+- [Amazon ECS CLI Commands](#amazon-ecs-cli-commands)
+- [Contributing to the CLI](#contributing-to-the-cli)
+- [License](#license)
+
+## Security disclosures
+
+If you think you’ve found a potential security issue, please do not post it in the Issues.  Instead, please follow the instructions [here](https://aws.amazon.com/security/vulnerability-reporting/) or email AWS security directly at [aws-security@amazon.com](mailto:aws-security@amazon.com).
+</description>
+    <releaseNotes>## 1.21.0
+* Feature - Add support for container dependencies in ecs-params.yml (#1105)
+* Feature - Add support for Arm-based AWS Graviton2 instances on `ecs-cli up` (#1116)</releaseNotes>
+
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
