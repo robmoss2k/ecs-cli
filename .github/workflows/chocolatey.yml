@@ -17,4 +17,4 @@ jobs:
         name: Choco push
         uses: crazy-max/ghaction-chocolatey@v1
         with:
-          args: push whatpulse.3.1.nupkg -k="${{ secrets.APIKEY }}" --trace -s https://chocolatey.org/
+          args: push ecs-cli.1.21.0.nupkg -k="${{ secrets.APIKEY }}" --trace -s https://chocolatey.org/
